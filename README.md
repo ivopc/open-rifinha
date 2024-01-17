@@ -1,0 +1,2 @@
+# open-rifinha
+Open Rifinha
