@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchases",
+  "info": {
+    "singularName": "purchase",
+    "pluralName": "purchases",
+    "displayName": "Purchase",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "string"
+    },
+    "prize_id": {
+      "type": "string"
+    },
+    "payment_qr_code_image": {
+      "type": "string"
+    },
+    "payment_qr_code": {
+      "type": "string"
+    },
+    "already_paid": {
+      "type": "boolean"
+    },
+    "price_value": {
+      "type": "decimal"
+    },
+    "ticket_amount": {
+      "type": "biginteger"
+    },
+    "pix_payment_id": {
+      "type": "string"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "pendent",
+        "approved",
+        "expired",
+        "canceled"
+      ]
+    },
+    "is_deleted": {
+      "type": "boolean",
+      "default": false,
+      "private": true
+    }
+  }
+}

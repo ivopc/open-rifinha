@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "website_configs",
+  "info": {
+    "singularName": "website-config",
+    "pluralName": "website-configs",
+    "displayName": "WebsiteConfig",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "theme": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "goncis-donate-ts",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "test": "jest --forceExit --detectOpenHandlers --experimental-vm-modules"
+  },
+  "devDependencies": {
+    "@nuxtjs/strapi": "^1.9.3",
+    "@types/jest": "^29.5.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.11.1",
+    "@strapi/plugin-users-permissions": "4.11.1",
+    "@strapi/strapi": "4.11.1",
+    "@types/koa": "^2.13.12",
+    "better-sqlite3": "8.0.1",
+    "dotenv": "^16.3.1",
+    "ioredis": "^5.3.2",
+    "mercadopago": "^1.5.17",
+    "money": "^0.2.0",
+    "strapi-advanced-uuid": "^1.0.11"
+  },
+  "author": {
+    "name": "Ivopc <ivoopc@gmail.com>"
+  },
+  "strapi": {
+    "uuid": "23855d3e-abee-4938-9d91-6c3347e7114a"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=20.4.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

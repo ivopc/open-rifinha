@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "winners",
+  "info": {
+    "singularName": "winner",
+    "pluralName": "winners",
+    "displayName": "Winner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "biginteger"
+    },
+    "prize_id": {
+      "type": "biginteger"
+    }
+  }
+}

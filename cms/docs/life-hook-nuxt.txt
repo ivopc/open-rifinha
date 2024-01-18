@@ -1,0 +1,49 @@
+SÓ NO FRONTEND
+
+No Nuxt.js 3, os seguintes eventos do ciclo de vida do Vue.js são específicos do front-end:
+
+- `beforeMount`: Este evento ocorre antes que o componente seja montado no DOM. É adequado para realizar tarefas de preparação antes da renderização, como a inicialização de bibliotecas externas que requerem o DOM.
+
+- `mounted`: Este evento ocorre após o componente ser montado no DOM. É útil para ações que dependem do componente estar presente no DOM, como a interação com o DOM ou a inicialização de bibliotecas externas.
+
+- `beforeUpdate`: Este evento ocorre antes de uma atualização do componente, quando os dados do componente são alterados. Pode ser usado para executar tarefas antes da atualização, como fazer backup de dados ou interagir com APIs externas.
+
+- `updated`: Este evento ocorre após uma atualização do componente. É útil para realizar ações após uma atualização, como manipulação do DOM ou atualização de componentes filhos.
+
+- `beforeUnmount`: Este evento ocorre antes do desmontagem do componente. É útil para executar tarefas de limpeza ou remoção de event listeners antes do componente ser desmontado.
+
+- `unmounted`: Este evento ocorre após o desmontagem do componente. Neste estágio, o componente não está mais presente no DOM.
+
+Esses eventos são específicos do front-end porque estão relacionados à interação com o DOM e à manipulação de elementos visuais. Eles são acionados quando o componente está sendo renderizado e quando ocorrem alterações nos dados do componente. No servidor, o Nuxt.js usa o evento `beforeCreate` e o evento `created` para a renderização inicial, mas os eventos de montagem, atualização e desmontagem não são relevantes, pois não há interação com o DOM no servidor.
+
+É importante lembrar que, ao utilizar o Nuxt.js, você pode aproveitar a renderização no servidor (SSR) para pré-renderizar suas páginas e fornecer uma experiência de carregamento rápido. Nesse caso, alguns eventos de ciclo de vida podem não ser acionados no lado do cliente, pois a renderização ocorre no servidor.
+
+
+
+
+
+
+-------------------------
+
+SÓ NO BACKEND
+
+
+No Nuxt.js 3, não há eventos de ciclo de vida específicos do back-end. Os eventos do ciclo de vida do Vue.js, que são usados no Nuxt.js, são principalmente relacionados à interação com o DOM e à manipulação de elementos visuais, e são acionados durante a renderização e atualização do componente.
+
+No entanto, no contexto do back-end, ao usar o Nuxt.js em conjunto com o SSR (Server-Side Rendering), você pode encontrar os seguintes eventos relacionados ao lado do servidor:
+
+beforeCreate: Este evento ocorre antes que o componente seja criado. Pode ser útil para executar tarefas de configuração do servidor antes da renderização inicial.
+
+created: Este evento ocorre após o componente ser criado no servidor. É adequado para executar tarefas iniciais no lado do servidor, como carregar dados de uma API ou configurar o ambiente.
+
+beforeRender: Este evento ocorre antes da renderização do componente no servidor. Pode ser usado para executar tarefas adicionais antes da geração do HTML.
+
+rendered: Este evento ocorre após a renderização do componente no servidor. É útil para executar ações após a renderização, como enviar logs ou manipular o resultado da renderização.
+
+beforeSerialize: Este evento ocorre antes da serialização dos dados do componente no servidor. Pode ser útil para executar tarefas adicionais antes da conversão dos dados em JSON.
+
+serialized: Este evento ocorre após a serialização dos dados do componente no servidor. Pode ser usado para executar ações após a conversão dos dados em JSON, como enviar os dados para um cliente ou armazená-los em cache.
+
+Esses eventos são específicos do lado do servidor e estão relacionados à renderização inicial, manipulação de dados e serialização no servidor. Eles são acionados durante o processo de SSR do Nuxt.js.
+
+No entanto, é importante notar que esses eventos são específicos do back-end e não estão diretamente relacionados à interação com o DOM ou à manipulação de elementos visuais, como nos eventos do ciclo de vida do front-end. Eles são mais relevantes para a lógica do servidor e para a renderização inicial das páginas.

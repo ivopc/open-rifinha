@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prizes",
+  "info": {
+    "singularName": "prize",
+    "pluralName": "prizes",
+    "displayName": "Prize",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "availability": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "prize": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "string"
+    },
+    "minTicketsPerPurchase": {
+      "type": "integer"
+    },
+    "maxTicketsPerPurchase": {
+      "type": "integer"
+    },
+    "raffleType": {
+      "type": "enumeration",
+      "enum": [
+        "random",
+        "pick"
+      ],
+      "default": "random"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "ticketsAmount": {
+      "type": "biginteger",
+      "unique": false,
+      "default": "1000000"
+    },
+    "ticketsBuyAssignment": {
+      "type": "enumeration",
+      "enum": [
+        "beforeBuy",
+        "afterBuy"
+      ],
+      "default": "afterBuy"
+    },
+    "raffleStartDate": {
+      "type": "datetime"
+    },
+    "raffleResultsDate": {
+      "type": "datetime"
+    },
+    "timeLimitToExpireTicketBuyRequest": {
+      "type": "biginteger",
+      "default": "3600000"
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

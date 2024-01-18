@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "singularName": "ticket",
+    "pluralName": "tickets",
+    "displayName": "Ticket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ticket_number": {
+      "type": "biginteger"
+    },
+    "purchase_id": {
+      "type": "biginteger"
+    },
+    "prize_id": {
+      "type": "biginteger"
+    },
+    "user_id": {
+      "type": "biginteger"
+    }
+  }
+}
